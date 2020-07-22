@@ -11,13 +11,13 @@
 //
 // 
 //Input: [1,3,5]
-//Output: 1 
+//Output: 1
 //
 // Example 2: 
 //
 // 
 //Input: [2,2,2,0,1]
-//Output: 0 
+//Output: 0
 //
 // Note: 
 //
@@ -31,6 +31,20 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func findMin(nums []int) int {
+	l, r := 0, len(nums) - 1;
 
+	for l < r {
+		m := l + (r - l) / 2;
+
+		if nums[m] < nums[r] {
+			r = m;
+		} else if nums[m] == nums[r] {
+			r--;
+		} else {
+			l = m + 1;
+		}
+	}
+
+	return nums[l];
 }
 //leetcode submit region end(Prohibit modification and deletion)
