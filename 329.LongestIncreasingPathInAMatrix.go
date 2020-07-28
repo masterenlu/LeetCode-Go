@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import _ "fmt"
 
 //Given an integer matrix, find the length of the longest increasing path.
 //
@@ -43,10 +43,12 @@ import "fmt"
 
 // 测试
 
+/*
 func main() {
 	mat := [][]int{{1, 2}}
 	fmt.Print(longestIncreasingPath(mat))
 }
+*/
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
