@@ -1,4 +1,4 @@
-package main
+package Problem
 
 //Given a non-empty array of integers, every element appears twice except for on
 //e. Find that single one.

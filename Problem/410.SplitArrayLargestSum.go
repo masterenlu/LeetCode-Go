@@ -1,4 +1,4 @@
-package main
+package Problem
 
 //Given an array which consists of non-negative integers and an integer m, you c
 //an split the array into m non-empty continuous subarrays. Write an algorithm to

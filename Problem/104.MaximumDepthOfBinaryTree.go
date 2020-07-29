@@ -1,4 +1,4 @@
-package main
+package Problem
 
 //Given a binary tree, find its maximum depth.
 //

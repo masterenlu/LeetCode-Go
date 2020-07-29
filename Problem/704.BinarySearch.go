@@ -1,4 +1,4 @@
-package main
+package Problem
 
 //Given a sorted (in ascending order) integer array nums of n elements and a tar
 //get value, write a function to search target in nums. If target exists, then ret
