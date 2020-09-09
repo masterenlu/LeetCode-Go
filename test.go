@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-var result []int
-
 func main() {
-	path := 1
-	another := path
+	path := []int{0, 1, 2, 3}
+	another := make([]int, len(path))
+	copy(another, path)
+
 	fmt.Printf("p: %v, anP: %v\n", path, another)
-	path = 2
+	path[0] = 9
 	fmt.Printf("p: %v, anP: %v\n", path, another)
 }
