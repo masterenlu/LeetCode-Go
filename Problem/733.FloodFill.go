@@ -4,25 +4,25 @@ package Problem
 func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
 	color := image[sr][sc]
 	if color != newColor {
-		dfs(image, sr, sc, newColor, color)
+		dfsFloodFill(image, sr, sc, newColor, color)
 	}
 	return image
 }
 
-func dfs(image [][]int, x, y, newColor, color int) {
+func dfsFloodFill(image [][]int, x, y, newColor, color int) {
 	if color == image[x][y] {
 		image[x][y] = newColor
 		if x+1 < len(image) {
-			dfs(image, x+1, y, newColor, color)
+			dfsFloodFill(image, x+1, y, newColor, color)
 		}
 		if x-1 >= 0 {
-			dfs(image, x-1, y, newColor, color)
+			dfsFloodFill(image, x-1, y, newColor, color)
 		}
 		if y+1 < len(image[0]) {
-			dfs(image, x, y+1, newColor, color)
+			dfsFloodFill(image, x, y+1, newColor, color)
 		}
 		if y-1 >= 0 {
-			dfs(image, x, y-1, newColor, color)
+			dfsFloodFill(image, x, y-1, newColor, color)
 		}
 	}
 }

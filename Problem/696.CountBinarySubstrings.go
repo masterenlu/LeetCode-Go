@@ -1,4 +1,4 @@
-package main
+package Problem
 
 func main() {
 	countBinarySubstrings("110011111011011001111111111111001100101")
