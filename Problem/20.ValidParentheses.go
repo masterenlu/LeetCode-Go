@@ -1,6 +1,7 @@
 package Problem
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func isValid(s string) bool {
 	stack := make([]byte, 0)
 
@@ -21,11 +22,11 @@ func isValid(s string) bool {
 	return len(stack) == 0
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-14 10:50:15
 
-//Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
+// Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
 // determine if the input string is valid.
 //
 // An input string is valid if:
@@ -40,36 +41,36 @@ func isValid(s string) bool {
 // Example 1:
 //
 //
-//Input: "()"
-//Output: true
+// Input: "()"
+// Output: true
 //
 //
 // Example 2:
 //
 //
-//Input: "()[]{}"
-//Output: true
+// Input: "()[]{}"
+// Output: true
 //
 //
 // Example 3:
 //
 //
-//Input: "(]"
-//Output: false
+// Input: "(]"
+// Output: false
 //
 //
 // Example 4:
 //
 //
-//Input: "([)]"
-//Output: false
+// Input: "([)]"
+// Output: false
 //
 //
 // Example 5:
 //
 //
-//Input: "{[]}"
-//Output: true
+// Input: "{[]}"
+// Output: true
 //
 //
 // 👍 1768 👎 0

@@ -1,6 +1,6 @@
 package Problem
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -16,6 +16,7 @@ package Problem
  *     Right *TreeNode
  * }
  */
+//goland:noinspection GoUnusedFunction
 func sortedListToBST(head *ListNode) *TreeNode {
 	return createTree(head, nil)
 }
@@ -41,46 +42,46 @@ func createTree(left, right *ListNode) *TreeNode {
 	return root
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-18 08:56:12
 
-//Given the head of a singly linked list where elements are sorted in ascending
-//order, convert it to a height balanced BST.
+// Given the head of a singly linked list where elements are sorted in ascending
+// order, convert it to a height balanced BST.
 //
 // For this problem, a height-balanced binary tree is defined as a binary tree i
-//n which the depth of the two subtrees of every node never differ by more than 1.
+// n which the depth of the two subtrees of every node never differ by more than 1.
 //
 //
 //
 // Example 1:
 //
 //
-//Input: head = [-10,-3,0,5,9]
-//Output: [0,-3,9,-10,null,5]
-//Explanation: One possible answer is [0,-3,9,-10,null,5], which represents the
-//shown height balanced BST.
+// Input: head = [-10,-3,0,5,9]
+// Output: [0,-3,9,-10,null,5]
+// Explanation: One possible answer is [0,-3,9,-10,null,5], which represents the
+// shown height balanced BST.
 //
 //
 // Example 2:
 //
 //
-//Input: head = []
-//Output: []
+// Input: head = []
+// Output: []
 //
 //
 // Example 3:
 //
 //
-//Input: head = [0]
-//Output: [0]
+// Input: head = [0]
+// Output: [0]
 //
 //
 // Example 4:
 //
 //
-//Input: head = [1,3]
-//Output: [3,1]
+// Input: head = [1,3]
+// Output: [3,1]
 //
 //
 //

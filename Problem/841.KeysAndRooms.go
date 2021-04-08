@@ -1,6 +1,7 @@
 package Problem
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func canVisitAllRooms(rooms [][]int) bool {
 	isVisited := make([]bool, len(rooms))
 
@@ -25,16 +26,16 @@ func getKeys(key int, rooms [][]int, isVisited []bool) []bool {
 	return isVisited
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-31 09:51:34
 
-//There are N rooms and you start in room 0. Each room has a distinct number in
-//0, 1, 2, ..., N-1, and each room may have some keys to access the next room.
+// There are N rooms and you start in room 0. Each room has a distinct number in
+// 0, 1, 2, ..., N-1, and each room may have some keys to access the next room.
 //
 // Formally, each room i has a list of keys rooms[i], and each key rooms[i][j] i
-//s an integer in [0, 1, ..., N-1] where N = rooms.length. A key rooms[i][j] = v o
-//pens the room with number v.
+// s an integer in [0, 1, ..., N-1] where N = rooms.length. A key rooms[i][j] = v o
+// pens the room with number v.
 //
 // Initially, all the rooms start locked (except for room 0).
 //
@@ -48,22 +49,22 @@ func getKeys(key int, rooms [][]int, isVisited []bool) []bool {
 // Example 1:
 //
 //
-//Input: [[1],[2],[3],[]]
-//Output: true
-//Explanation:
-//We start in room 0, and pick up key 1.
-//We then go to room 1, and pick up key 2.
-//We then go to room 2, and pick up key 3.
-//We then go to room 3.  Since we were able to go to every room, we return true.
+// Input: [[1],[2],[3],[]]
+// Output: true
+// Explanation:
+// We start in room 0, and pick up key 1.
+// We then go to room 1, and pick up key 2.
+// We then go to room 2, and pick up key 3.
+// We then go to room 3.  Since we were able to go to every room, we return true.
 //
 //
 //
 // Example 2:
 //
 //
-//Input: [[1,3],[3,0,1],[2],[0]]
-//Output: false
-//Explanation: We can't enter the room with number 2.
+// Input: [[1,3],[3,0,1],[2],[0]]
+// Output: false
+// Explanation: We can't enter the room with number 2.
 //
 //
 // Note:

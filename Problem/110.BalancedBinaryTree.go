@@ -2,7 +2,7 @@ package Problem
 
 import "math"
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -11,6 +11,7 @@ import "math"
  *     Right *TreeNode
  * }
  */
+//goland:noinspection GoUnusedFunction
 func isBalanced(root *TreeNode) bool {
 	flag := true
 	_, flag = dfs(root, flag)
@@ -36,17 +37,17 @@ func getMax(a, b int) int {
 	return a
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-17 09:03:08
 
-//Given a binary tree, determine if it is height-balanced.
+// Given a binary tree, determine if it is height-balanced.
 //
 // For this problem, a height-balanced binary tree is defined as:
 //
 //
 // a binary tree in which the left and right subtrees of every node differ in he
-//ight by no more than 1.
+// ight by no more than 1.
 //
 //
 //
@@ -64,7 +65,7 @@ func getMax(a, b int) int {
 //
 // Return true.
 //
-//Example 2:
+// Example 2:
 //
 // Given the following tree [1,2,2,3,3,null,null,4,4]:
 //

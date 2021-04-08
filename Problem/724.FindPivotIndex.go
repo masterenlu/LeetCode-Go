@@ -1,34 +1,34 @@
 package Problem
 
-//Given an array of integers nums, write a method that returns the "pivot" index
+// Given an array of integers nums, write a method that returns the "pivot" index
 // of this array.
 //
 // We define the pivot index as the index where the sum of all the numbers to th
-//e left of the index is equal to the sum of all the numbers to the right of the i
-//ndex.
+// e left of the index is equal to the sum of all the numbers to the right of the i
+// ndex.
 //
 // If no such index exists, we should return -1. If there are multiple pivot ind
-//exes, you should return the left-most pivot index.
+// exes, you should return the left-most pivot index.
 //
 //
 // Example 1:
 //
 //
-//Input: nums = [1,7,3,6,5,6]
-//Output: 3
-//Explanation:
-//The sum of the numbers to the left of index 3 (nums[3] = 6) is equal to the su
-//m of numbers to the right of index 3.
-//Also, 3 is the first index where this occurs.
+// Input: nums = [1,7,3,6,5,6]
+// Output: 3
+// Explanation:
+// The sum of the numbers to the left of index 3 (nums[3] = 6) is equal to the su
+// m of numbers to the right of index 3.
+// Also, 3 is the first index where this occurs.
 //
 //
 // Example 2:
 //
 //
-//Input: nums = [1,2,3]
-//Output: -1
-//Explanation:
-//There is no index that satisfies the conditions in the problem statement.
+// Input: nums = [1,2,3]
+// Output: -1
+// Explanation:
+// There is no index that satisfies the conditions in the problem statement.
 //
 //
 //
@@ -41,7 +41,8 @@ package Problem
 // Related Topics 数组
 // 👍 201 👎 0
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func pivotIndex(nums []int) int {
 	sum, left := 0, 0
 	for _, val := range nums {
@@ -57,6 +58,6 @@ func pivotIndex(nums []int) int {
 	return -1
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-05 11:36:55

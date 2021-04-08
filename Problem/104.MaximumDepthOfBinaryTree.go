@@ -1,6 +1,6 @@
 package Problem
 
-//Given a binary tree, find its maximum depth.
+// Given a binary tree, find its maximum depth.
 //
 // The maximum depth is the number of nodes along the longest path from the root
 // node down to the farthest leaf node.
@@ -22,7 +22,7 @@ package Problem
 // Related Topics 树 深度优先搜索
 // 👍 618 👎 0
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -31,6 +31,7 @@ package Problem
  *     Right *TreeNode
  * }
  */
+//goland:noinspection GoUnusedFunction
 func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
@@ -48,6 +49,6 @@ func max(a, b int) int {
 	return a
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
-//2020-07-28 08:54:58
+// 2020-07-28 08:54:58

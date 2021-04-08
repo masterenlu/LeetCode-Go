@@ -1,6 +1,7 @@
 package Problem
 
 // leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func search(nums []int, target int) bool {
 	highIndex := len(nums) - 1
 	for idx := 0; idx < len(nums)-1; idx++ {

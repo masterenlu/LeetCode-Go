@@ -4,7 +4,8 @@ package Problem
 	Go append 的参数并不是值传递，而是引用
 */
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func combine(n int, k int) [][]int {
 	result := make([][]int, 0)
 
@@ -30,12 +31,12 @@ func backTrace(start, n, k int, path []int, result *[][]int) {
 	}
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-09-08 08:11:33
 
-//Given two integers n and k, return all possible combinations of k numbers out
-//of 1 ... n.
+// Given two integers n and k, return all possible combinations of k numbers out
+// of 1 ... n.
 //
 // You may return the answer in any order.
 //
@@ -43,23 +44,23 @@ func backTrace(start, n, k int, path []int, result *[][]int) {
 // Example 1:
 //
 //
-//Input: n = 4, k = 2
-//Output:
-//[
+// Input: n = 4, k = 2
+// Output:
+// [
 //  [2,4],
 //  [3,4],
 //  [2,3],
 //  [1,2],
 //  [1,3],
 //  [1,4],
-//]
+// ]
 //
 //
 // Example 2:
 //
 //
-//Input: n = 1, k = 1
-//Output: [[1]]
+// Input: n = 1, k = 1
+// Output: [[1]]
 //
 //
 //

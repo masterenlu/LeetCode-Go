@@ -1,10 +1,11 @@
-package main
+package Problem
 
 import (
 	"fmt"
 	"sort"
 )
 
+//goland:noinspection GoUnusedFunction
 func main() {
 	nums1, nums2 := []int{1, 2, 3, 0, 0, 0}, []int{2, 5, 6}
 	merge(nums1, 3, nums2, 3)

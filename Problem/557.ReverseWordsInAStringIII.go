@@ -4,19 +4,19 @@ import (
 	"strings"
 )
 
-//Given a string, you need to reverse the order of characters in each word withi
-//n a sentence while still preserving whitespace and initial word order.
+// Given a string, you need to reverse the order of characters in each word withi
+// n a sentence while still preserving whitespace and initial word order.
 //
 // Example 1:
 //
-//Input: "Let's take LeetCode contest"
-//Output: "s'teL ekat edoCteeL tsetnoc"
+// Input: "Let's take LeetCode contest"
+// Output: "s'teL ekat edoCteeL tsetnoc"
 //
 //
 //
 // Note:
-//In the string, each word is separated by single space and there will not be an
-//y extra space in the string.
+// In the string, each word is separated by single space and there will not be an
+// y extra space in the string.
 // Related Topics 字符串
 // 👍 205 👎 0
 
@@ -25,7 +25,8 @@ import (
 		reverseWords("Let's go home.")
 }*/
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func reverseWords(s string) string {
 	ss := strings.Split(s, " ")
 	ans := make([]byte, 0)
@@ -39,6 +40,6 @@ func reverseWords(s string) string {
 	return string(ans)
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
-//2020-07-28 13:16:54
+// 2020-07-28 13:16:54

@@ -1,25 +1,25 @@
 package Problem
 
-//Given a list of unique words, find all pairs of distinct indices (i, j) in the
+// Given a list of unique words, find all pairs of distinct indices (i, j) in the
 // given list, so that the concatenation of the two words, i.e. words[i] + words[j
-//] is a palindrome.
+// ] is a palindrome.
 //
 // Example 1:
 //
 //
 //
-//Input: ["abcd","dcba","lls","s","sssll"]
-//Output: [[0,1],[1,0],[3,2],[2,4]]
-//Explanation: The palindromes are ["dcbaabcd","abcddcba","slls","llssssll"]
+// Input: ["abcd","dcba","lls","s","sssll"]
+// Output: [[0,1],[1,0],[3,2],[2,4]]
+// Explanation: The palindromes are ["dcbaabcd","abcddcba","slls","llssssll"]
 //
 //
 //
 // Example 2:
 //
 //
-//Input: ["bat","tab","cat"]
-//Output: [[0,1],[1,0]]
-//Explanation: The palindromes are ["battab","tabbat"]
+// Input: ["bat","tab","cat"]
+// Output: [[0,1],[1,0]]
+// Explanation: The palindromes are ["battab","tabbat"]
 //
 //
 //
@@ -34,7 +34,8 @@ package Problem
 	注意需要判断空字符串的情况
 */
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func palindromePairs(words []string) [][]int {
 	record := make(map[string]int)
 	ans := make([][]int, 0)
@@ -89,6 +90,6 @@ func reverse(s string) string {
 	return string(revStr)
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-06 08:56:56

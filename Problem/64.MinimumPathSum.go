@@ -1,6 +1,6 @@
 package Problem
 
-//Given a m x n grid filled with non-negative numbers, find a path from top left
+// Given a m x n grid filled with non-negative numbers, find a path from top left
 // to bottom right which minimizes the sum of all numbers along its path.
 //
 // Note: You can only move either down or right at any point in time.
@@ -8,19 +8,20 @@ package Problem
 // Example:
 //
 //
-//Input:
-//[
-//  [1,3,1],
+// Input:
+// [
+//   [1,3,1],
 //  [1,5,1],
 //  [4,2,1]
-//]
-//Output: 7
-//Explanation: Because the path 1→3→1→1→1 minimizes the sum.
+// ]
+// Output: 7
+// Explanation: Because the path 1→3→1→1→1 minimizes the sum.
 //
 // Related Topics 数组 动态规划
 // 👍 544 👎 0
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func minPathSum(grid [][]int) int {
 	if len(grid) == 0 || len(grid[0]) == 0 {
 		return 0
@@ -56,6 +57,6 @@ func getMin(a int, b int) int {
 	return a
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
-//2020-07-23 09:36:39
+// 2020-07-23 09:36:39

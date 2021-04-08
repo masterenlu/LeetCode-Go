@@ -1,7 +1,7 @@
 package Problem
 
-//Given an array arr of integers, check if there exists two integers N and M suc
-//h that N is the double of M ( i.e. N = 2 * M).
+// Given an array arr of integers, check if there exists two integers N and M suc
+// h that N is the double of M ( i.e. N = 2 * M).
 //
 // More formally check if there exists two indices i and j such that :
 //
@@ -15,25 +15,25 @@ package Problem
 // Example 1:
 //
 //
-//Input: arr = [10,2,5,3]
-//Output: true
-//Explanation: N = 10 is the double of M = 5,that is, 10 = 2 * 5.
+// Input: arr = [10,2,5,3]
+// Output: true
+// Explanation: N = 10 is the double of M = 5,that is, 10 = 2 * 5.
 //
 //
 // Example 2:
 //
 //
-//Input: arr = [7,1,14,11]
-//Output: true
-//Explanation: N = 14 is the double of M = 7,that is, 14 = 2 * 7.
+// Input: arr = [7,1,14,11]
+// Output: true
+// Explanation: N = 14 is the double of M = 7,that is, 14 = 2 * 7.
 //
 //
 // Example 3:
 //
 //
-//Input: arr = [3,1,7,11]
-//Output: false
-//Explanation: In this case does not exist N and M, such that N = 2 * M.
+// Input: arr = [3,1,7,11]
+// Output: false
+// Explanation: In this case does not exist N and M, such that N = 2 * M.
 //
 //
 //
@@ -46,7 +46,8 @@ package Problem
 // Related Topics 数组
 // 👍 20 👎 0
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func checkIfExist(arr []int) bool {
 	expect, exist := map[int]bool{}, map[int]bool{}
 
@@ -62,6 +63,6 @@ func checkIfExist(arr []int) bool {
 	return false
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
-//2020-07-29 13:08:49
+// 2020-07-29 13:08:49

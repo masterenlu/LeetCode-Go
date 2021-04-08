@@ -1,6 +1,7 @@
 package Problem
 
 // leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func removeDuplicates(nums []int) int {
 	for idx := 0; idx < len(nums)-2; idx++ {
 		if nums[idx] == nums[idx+2] {

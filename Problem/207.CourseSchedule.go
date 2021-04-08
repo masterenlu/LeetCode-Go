@@ -1,34 +1,34 @@
 package Problem
 
-//There are a total of numCourses courses you have to take, labeled from 0 to nu
-//mCourses-1.
+// There are a total of numCourses courses you have to take, labeled from 0 to nu
+// mCourses-1.
 //
 // Some courses may have prerequisites, for example to take course 0 you have to
 // first take course 1, which is expressed as a pair: [0,1]
 //
 // Given the total number of courses and a list of prerequisite pairs, is it pos
-//sible for you to finish all courses?
+// sible for you to finish all courses?
 //
 //
 // Example 1:
 //
 //
-//Input: numCourses = 2, prerequisites = [[1,0]]
-//Output: true
-//Explanation: There are a total of 2 courses to take.
-//             To take course 1 you should have finished course 0. So it is poss
-//ible.
+// Input: numCourses = 2, prerequisites = [[1,0]]
+// Output: true
+// Explanation: There are a total of 2 courses to take.
+//              To take course 1 you should have finished course 0. So it is poss
+// ible.
 //
 //
 // Example 2:
 //
 //
-//Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
-//Output: false
-//Explanation: There are a total of 2 courses to take.
-//             To take course 1 you should have finished course 0, and to take c
-//ourse 0 you should
-//             also have finished course 1. So it is impossible.
+// Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
+// Output: false
+// Explanation: There are a total of 2 courses to take.
+//              To take course 1 you should have finished course 0, and to take c
+// ourse 0 you should
+//              also have finished course 1. So it is impossible.
 //
 //
 //
@@ -36,7 +36,7 @@ package Problem
 //
 //
 // The input prerequisites is a graph represented by a list of edges, not adjace
-//ncy matrices. Read more about how a graph is represented.
+// ncy matrices. Read more about how a graph is represented.
 // You may assume that there are no duplicate edges in the input prerequisites.
 //
 // 1 <= numCourses <= 10^5
@@ -49,7 +49,8 @@ package Problem
 	判断可选结点和所有结点的数量
 */
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func canFinish(numCourses int, prerequisites [][]int) bool {
 	// 邻接矩阵
 	adjaceMat := make([][]int, numCourses)
@@ -63,7 +64,7 @@ func canFinish(numCourses int, prerequisites [][]int) bool {
 	}
 
 	// 可选队列
-	queue := []int{}
+	var queue []int
 	// 初始化
 	for index, val := range inDegree {
 		// 初始入度为 0 的结点
@@ -91,6 +92,6 @@ func canFinish(numCourses int, prerequisites [][]int) bool {
 	return cnt == numCourses
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-04 09:17:56

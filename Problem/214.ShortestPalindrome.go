@@ -1,6 +1,7 @@
 package Problem
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func shortestPalindrome(s string) string {
 	var ans []byte
 
@@ -24,24 +25,24 @@ func isPalindrome(s string) bool {
 	return true
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-29 09:13:24
 
-//Given a string s, you are allowed to convert it to a palindrome by adding char
-//acters in front of it. Find and return the shortest palindrome you can find by p
-//erforming this transformation.
+// Given a string s, you are allowed to convert it to a palindrome by adding char
+// acters in front of it. Find and return the shortest palindrome you can find by p
+// erforming this transformation.
 //
 // Example 1:
 //
 //
-//Input: "aacecaaa"
-//Output: "aaacecaaa"
+// Input: "aacecaaa"
+// Output: "aaacecaaa"
 //
 //
 // Example 2:
 //
 //
-//Input: "abcd"
-//Output: "dcbabcd"
+// Input: "abcd"
+// Output: "dcbabcd"
 // 👍 198 👎 0

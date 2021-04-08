@@ -2,36 +2,36 @@ package Problem
 
 import _ "fmt"
 
-//Given an integer matrix, find the length of the longest increasing path.
+// Given an integer matrix, find the length of the longest increasing path.
 //
 // From each cell, you can either move to four directions: left, right, up or do
-//wn. You may NOT move diagonally or move outside of the boundary (i.e. wrap-aroun
-//d is not allowed).
+// wn. You may NOT move diagonally or move outside of the boundary (i.e. wrap-aroun
+// d is not allowed).
 //
 // Example 1:
 //
 //
-//Input: nums =
-//[
+// Input: nums =
+// [
 //  [9,9,4],
 //  [6,6,8],
 //  [2,1,1]
-//]
-//Output: 4
-//Explanation: The longest increasing path is [1, 2, 6, 9].
+// ]
+// Output: 4
+// Explanation: The longest increasing path is [1, 2, 6, 9].
 //
 //
 // Example 2:
 //
 //
-//Input: nums =
-//[
+// Input: nums =
+// [
 //  [3,4,5],
 //  [3,2,6],
 //  [2,2,1]
-//]
-//Output: 4
-//Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is
+// ]
+// Output: 4
+// Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is
 // not allowed.
 //
 // Related Topics 深度优先搜索 拓扑排序 记忆化
@@ -50,7 +50,7 @@ func main() {
 }
 */
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 
 // 全局变量，矩阵的 row 和 column
 var m, n int
@@ -82,6 +82,7 @@ func dfs(r, c int, matrix, val [][]int) int {
 	return val[r][c]
 }
 
+//goland:noinspection GoUnusedFunction
 func longestIncreasingPath(matrix [][]int) int {
 	// 判断矩阵是否存在
 	if len(matrix) == 0 || len(matrix) == 0 {
@@ -117,6 +118,6 @@ func max(a, b int) int {
 	return a
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
-//2020-07-26 08:41:48
+// 2020-07-26 08:41:48

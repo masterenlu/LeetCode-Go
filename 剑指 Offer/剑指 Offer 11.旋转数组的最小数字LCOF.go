@@ -1,10 +1,11 @@
 package 剑指_Offer
 
-//English description is not available for the problem. Please switch to Chinese
-//. Related Topics 二分查找
+// English description is not available for the problem. Please switch to Chinese
+// . Related Topics 二分查找
 // 👍 126 👎 0
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func minArray(numbers []int) int {
 	ans := numbers[0]
 
@@ -17,6 +18,6 @@ func minArray(numbers []int) int {
 	return ans
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
-//2020-07-29 09:02:10
+// 2020-07-29 09:02:10

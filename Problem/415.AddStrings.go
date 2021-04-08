@@ -1,7 +1,9 @@
 package Problem
 
-//Given two non-negative integers num1 and num2 represented as string, return th
-//e sum of num1 and num2.
+import "strconv"
+
+// Given two non-negative integers num1 and num2 represented as string, return th
+// e sum of num1 and num2.
 //
 // Note:
 //
@@ -9,12 +11,13 @@ package Problem
 // Both num1 and num2 contains only digits 0-9.
 // Both num1 and num2 does not contain any leading zero.
 // You must not use any built-in BigInteger library or convert the inputs to int
-//eger directly.
+// eger directly.
 //
 // Related Topics 字符串
 // 👍 194 👎 0
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func addStrings(num1 string, num2 string) string {
 	a, b, c, d, flag1, flag2 := 0, 0, 0, 0, false, false
 	ans := ""
@@ -37,15 +40,15 @@ func addStrings(num1 string, num2 string) string {
 		if flag1 && flag2 {
 			break
 		}
-		ans = string(d+'0') + ans[0:]
+		ans = strconv.Itoa(d+'0') + ans[0:]
 		c = (a + b + c) / 10
 	}
 	if d != 0 {
-		ans = string(d+'0') + ans[0:]
+		ans = strconv.Itoa(d+'0') + ans[0:]
 	}
 	return ans
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-03 08:31:16

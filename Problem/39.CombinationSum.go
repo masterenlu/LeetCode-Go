@@ -4,8 +4,9 @@ import (
 	"sort"
 )
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 
+//goland:noinspection GoUnusedFunction
 func combinationSum(candidates []int, target int) [][]int {
 	result := make([][]int, 0)
 	path := make([]int, 0)
@@ -30,16 +31,16 @@ func combinationSum(candidates []int, target int) [][]int {
 	return result
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-09-09 07:23:26
 
-//Given a set of candidate numbers (candidates) (without duplicates) and a targe
-//t number (target), find all unique combinations in candidates where the candidat
-//e numbers sums to target.
+// Given a set of candidate numbers (candidates) (without duplicates) and a targe
+// t number (target), find all unique combinations in candidates where the candidat
+// e numbers sums to target.
 //
 // The same repeated number may be chosen from candidates unlimited number of ti
-//mes.
+// mes.
 //
 // Note:
 //
@@ -51,24 +52,24 @@ func combinationSum(candidates []int, target int) [][]int {
 // Example 1:
 //
 //
-//Input: candidates = [2,3,6,7], target = 7,
-//A solution set is:
-//[
+// Input: candidates = [2,3,6,7], target = 7,
+// A solution set is:
+// [
 //  [7],
 //  [2,2,3]
-//]
+// ]
 //
 //
 // Example 2:
 //
 //
-//Input: candidates = [2,3,5], target = 8,
-//A solution set is:
-//[
-//  [2,2,2,2],
-//  [2,3,3],
-//  [3,5]
-//]
+// Input: candidates = [2,3,5], target = 8,
+// A solution set is:
+// [
+//   [2,2,2,2],
+//   [2,3,3],
+//   [3,5]
+// ]
 //
 //
 //

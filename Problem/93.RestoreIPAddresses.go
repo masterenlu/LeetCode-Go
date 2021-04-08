@@ -4,11 +4,12 @@ import (
 	"strconv"
 )
 
+//goland:noinspection GoUnusedFunction
 func main() {
 	restoreIpAddresses("25525511135")
 }
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 func restoreIpAddresses(s string) []string {
 	var ans []string
 
@@ -35,12 +36,12 @@ func isLegal(s string) bool {
 	return true
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-09 08:38:20
 
-//Given a string containing only digits, restore it by returning all possible va
-//lid IP address combinations.
+// Given a string containing only digits, restore it by returning all possible va
+// lid IP address combinations.
 //
 // A valid IP address consists of exactly four integers (each integer is between
 // 0 and 255) separated by single points.
@@ -48,8 +49,8 @@ func isLegal(s string) bool {
 // Example:
 //
 //
-//Input: "25525511135"
-//Output: ["255.255.11.135", "255.255.111.35"]
+// Input: "25525511135"
+// Output: ["255.255.11.135", "255.255.111.35"]
 //
 //
 // 👍 330 👎 0

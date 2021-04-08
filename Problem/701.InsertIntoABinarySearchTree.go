@@ -1,6 +1,6 @@
 package Problem
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -9,6 +9,7 @@ package Problem
  *     Right *TreeNode
  * }
  */
+//goland:noinspection GoUnusedFunction
 func insertIntoBST(root *TreeNode, val int) *TreeNode {
 	if root == nil {
 		return &TreeNode{Val: val}
@@ -35,28 +36,28 @@ func insertIntoBST(root *TreeNode, val int) *TreeNode {
 	return root
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-09-30 23:04:07
 
-//Given the root node of a binary search tree (BST) and a value to be inserted i
-//nto the tree, insert the value into the BST. Return the root node of the BST aft
-//er the insertion. It is guaranteed that the new value does not exist in the orig
-//inal BST.
+// Given the root node of a binary search tree (BST) and a value to be inserted i
+// nto the tree, insert the value into the BST. Return the root node of the BST aft
+// er the insertion. It is guaranteed that the new value does not exist in the orig
+// inal BST.
 //
 // Note that there may exist multiple valid ways for the insertion, as long as t
-//he tree remains a BST after insertion. You can return any of them.
+// he tree remains a BST after insertion. You can return any of them.
 //
 // For example,
 //
 //
-//Given the tree:
+// Given the tree:
 //        4
 //       / \
 //      2   7
 //     / \
 //    1   3
-//And the value to insert: 5
+// And the value to insert: 5
 //
 //
 // You can return this binary search tree:

@@ -1,6 +1,6 @@
 package Problem
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -9,6 +9,7 @@ package Problem
  *     Right *TreeNode
  * }
  */
+//goland:noinspection GoUnusedFunction
 func minDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
@@ -27,14 +28,14 @@ func getMin(a, b int) int {
 	return b
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-21 08:38:56
 
-//Given a binary tree, find its minimum depth.
+// Given a binary tree, find its minimum depth.
 //
 // The minimum depth is the number of nodes along the shortest path from the roo
-//t node down to the nearest leaf node.
+// t node down to the nearest leaf node.
 //
 // Note: A leaf is a node with no children.
 //

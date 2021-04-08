@@ -1,6 +1,6 @@
 package Problem
 
-//Given a binary tree, flatten it to a linked list in-place.
+// Given a binary tree, flatten it to a linked list in-place.
 //
 // For example, given the following tree:
 //
@@ -9,13 +9,13 @@ package Problem
 //   / \
 //  2   5
 // / \   \
-//3   4   6
+// 3   4   6
 //
 //
 // The flattened tree should look like:
 //
 //
-//1
+// 1
 // \
 //  2
 //   \
@@ -30,7 +30,7 @@ package Problem
 // Related Topics 树 深度优先搜索
 // 👍 441 👎 0
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -39,6 +39,7 @@ package Problem
  *     Right *TreeNode
  * }
  */
+//goland:noinspection GoUnusedFunction
 func flatten(root *TreeNode) {
 	p := root
 	for p != nil {
@@ -53,6 +54,6 @@ func flatten(root *TreeNode) {
 	}
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
 // 2020-08-02 08:21:41

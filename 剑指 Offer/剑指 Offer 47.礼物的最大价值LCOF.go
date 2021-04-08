@@ -1,12 +1,13 @@
 package 剑指_Offer
 
-//English description is not available for the problem. Please switch to Chinese
-//. Related Topics 动态规划
+// English description is not available for the problem. Please switch to Chinese
+// . Related Topics 动态规划
 // 👍 50 👎 0
 /*
 	同 Problem.64
 */
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
+//goland:noinspection GoUnusedFunction
 func maxValue(grid [][]int) int {
 	n := len(grid)
 	if n == 0 {
@@ -39,6 +40,6 @@ func getMax(a, b int) int {
 	return a
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)
 
-//2020-07-29 14:35:20
+// 2020-07-29 14:35:20
