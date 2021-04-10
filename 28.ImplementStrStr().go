@@ -3,23 +3,55 @@ package main
 // leetcode submit region begin(Prohibit modification and deletion)
 
 // ==================== Brute-Force =====================
+func strStr(haystack string, needle string) int {
+	if haystack == needle {
+		return 0
+	}
+	l := len(needle)
+	for idx := 0; idx <= len(haystack)-l; idx++ {
+		subs := haystack[idx : idx+l]
+		if subs == needle {
+			return idx
+		}
+	}
+	return -1
+}
+
+// ===================== KMP ======================
 // func strStr(haystack string, needle string) int {
-// 	if haystack == needle {
+// 	if needle == "" {
 // 		return 0
 // 	}
-// 	l := len(needle)
-// 	for idx := 0; idx <= len(haystack)-l; idx++ {
-// 		subs := haystack[idx : idx+l]
-// 		if subs == needle {
-// 			return idx
+// 	statusMachine := buildStatusMachine(needle)
+// 	status := 0
+// 	for idx, val := range haystack {
+// 		status = statusMachine[status][val]
+// 		if status == len(needle) {
+// 			return idx - len(needle) + 1
 // 		}
 // 	}
 // 	return -1
 // }
-// ===================== KMP ======================
-func strStr(haystack string, needle string) int {
-	// TODO
-}
+//
+// func buildStatusMachine(needle string) [][]int {
+// 	shadowStatus := 0
+// 	dp := make([][]int, len(needle))
+// 	for idx := range dp {
+// 		dp[idx] = make([]int, 256)
+// 	}
+// 	dp[0][needle[0]] = 1
+// 	for i := 1; i < len(dp); i++ {
+// 		for j := 0; j < len(dp[i]); j++ {
+// 			if j == int(needle[i]) {
+// 				dp[i][j] = i + 1
+// 			} else {
+// 				dp[i][j] = dp[shadowStatus][j]
+// 			}
+// 		}
+// 		shadowStatus = dp[shadowStatus][needle[i]]
+// 	}
+// 	return dp
+// }
 
 // leetcode submit region end(Prohibit modification and deletion)
 
