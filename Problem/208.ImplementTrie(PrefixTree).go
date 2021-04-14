@@ -13,8 +13,8 @@ func Constructor() Trie {
 }
 
 /** Inserts a word into the trie. */
-func (this *Trie) Insert(word string) {
-	pointer := this
+func (root *Trie) Insert(word string) {
+	pointer := root
 	for idx := range word {
 		if pointer.next[word[idx]-'a'] == nil {
 			pointer.next[word[idx]-'a'] = &Trie{isWord: false, next: [26]*Trie{nil}}
@@ -24,16 +24,22 @@ func (this *Trie) Insert(word string) {
 	pointer.isWord = true
 }
 
-/** Returns if the word is in the trie. */
-func (this *Trie) Search(word string) bool {
-	pointer := this
-	for idx := range word {
-		if pointer.next[word[idx]-'a'] == nil {
-			return false
+// get node of given prefix
+func (root *Trie) getPrefixNode(prefix string) *Trie {
+	pointer := root
+	for _, val := range prefix {
+		if pointer.next[val-'a'] == nil {
+			return nil
 		}
-		pointer = pointer.next[word[idx]-'a']
+		pointer = pointer.next[val-'a']
 	}
-	if pointer.isWord {
+	return pointer
+}
+
+/** Returns if the word is in the trie. */
+func (root *Trie) Search(word string) bool {
+	pointer := root.getPrefixNode(word)
+	if pointer != nil && pointer.isWord {
 		return true
 	} else {
 		return false
@@ -41,15 +47,13 @@ func (this *Trie) Search(word string) bool {
 }
 
 /** Returns if there is any word in the trie that starts with the given prefix. */
-func (this *Trie) StartsWith(prefix string) bool {
-	pointer := this
-	for idx := range prefix {
-		if pointer.next[prefix[idx]-'a'] == nil {
-			return false
-		}
-		pointer = pointer.next[prefix[idx]-'a']
+func (root *Trie) StartsWith(prefix string) bool {
+	pointer := root.getPrefixNode(prefix)
+	if pointer != nil {
+		return true
+	} else {
+		return false
 	}
-	return true
 }
 
 /**
