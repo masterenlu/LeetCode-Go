@@ -1,2 +1,5 @@
 .idea
 *.json
+/doc
+test.go
+struct.go
